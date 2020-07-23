@@ -1,0 +1,36 @@
+{
+    "server": {
+        "index": {
+            "port": 8055
+        }
+    },
+    "logging": {
+        "label"         : "Admin ",
+        "consoleLevel"  : "debug",
+        "fileLevel"     : "debug",
+        "newrelic"      : false
+    },
+    "database": {
+        "mysqlMaster"    : {
+            "host"           : "127.0.0.1",
+            "port"           : "3306",
+            "user"           : "root",
+            "password"       : "root",
+            "database"       : "PeopleGrove",
+            "connectionLimit": 10
+        },
+        "mysqlReadSlave" : {
+            "host"           : "127.0.0.1",
+            "port"           : "3306",
+            "user"           : "root",
+            "password"       : "root",
+            "database"       : "PeopleGrove",
+            "connectionLimit": 10
+        }
+    },
+    "systems":{
+        "wordPressSystem":{
+            "apiURL":"https://public-api.wordpress.com/rest/v1.1/sites/"
+        }
+    }
+}
