@@ -33,7 +33,7 @@ npm start
 cd api
 * npm start for development
 
-# Backend
+# Frontend
 cd Frontend
 * npm start for development
 
